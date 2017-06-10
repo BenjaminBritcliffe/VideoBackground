@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Video Page</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: #333; /*color of the nav bar*/
+}
+
+.topnav a {
+  float: left; /*text floating*/
+  display: block; /*Block the text*/
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px; /*Height and Stretch*/ 
+  text-decoration: none; /*remove underline*/
+  font-size: 17px; /*font size*/
+}
+
+.topnav a:hover {
+  background-color: #ddd; /*Hover color*/
+  color: black; /*font color*/
+}
+
+.topnav a.active {
+    background-color: #4CAF50; /*Page active block color*/
+    color: white; /*font color*/
+}
+</style>
+  </head>
+  <body>
+  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+  <div class="background-wrap">
+    <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop">
+      <!--muted="muted"-->
+      <source src="BG.mp4" type="video/mp4">
+      Video Not Supported.
+    </video>
+  </div>
+  <div class="content">
+    <h1>Welcome
+    </h1>
+    <p>And you don't have to wear your best fake smile.
+    </p>
+  </div>
+  
+  </body>
+</html>
